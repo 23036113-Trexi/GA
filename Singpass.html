@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singpass Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #e03c31;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .maintenance-banner {
+            background-color: #fff9e6;
+            padding: 10px 20px;
+            border: 1px solid #ffeeba;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .left-content {
+            flex: 1;
+        }
+        .login-form {
+            background-color: white;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e03c31;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .login-form a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .register-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">singpass</div>
+    </div>
+
+    <div class="maintenance-banner">
+        <h3>Singpass hotline under maintenance ^</h3>
+        <p>The Singpass hotline +65 6335 3533 will be undergoing system maintenance from 10pm to 2am. If you suspect that you have fallen prey to a scam, please call our alternative number +65 6031 3199 and press "9" for 24-hour support.</p>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <h1>Log in with Singpass</h1>
+            <p>Your trusted digital identity</p>
+        </div>
+        <div class="login-form">
+            <h2>Singpass app</h2>
+            <h2>Password login</h2>
+            <form>
+                <input type="text" placeholder="Singpass ID" required>
+                <input type="password" placeholder="Password" required>
+            </form>
+                <a href="OTP.html">
+                    <button class="submit-btn">Submit</button>
+                </a>
+            <br>
+            <a href="#">Retrieve Singpass ID</a>
+            <br>
+            <a href="#">Reset password</a>
+            <a href="#" class="register-button">Register for Singpass</a>
+        </div>
+    </div>
+</body>
+</html>

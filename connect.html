@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Financial Institutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: rgb(236, 233, 223); */
+            background-color: rgb(201, 223, 236);
+            margin: 0;
+            padding: 90px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab {
+            margin-right: 20px;
+            color: #666;
+            cursor: pointer;
+            padding-bottom: 10px;
+        }
+
+        .tab.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: box-shadow;
+        }
+
+        .card img {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Connect to more financial institutions</h1>
+        <p>Select any financial institution to connect.</p>
+
+        <div class="grid">
+            <a href="hsbc-page.html" class="card"><img src="HSBC.png" alt="HSBC"></a>
+            <a href="maybank-page.html" class="card"><img src="Maybank1.png" alt="Maybank"></a>
+            <a href="sc-page.html" class="card"><img src="SC.png" alt="Standard Chartered"></a>
+            <a href="uob-page.html" class="card"><img src="UOB.png" alt="UOB"></a>
+            <a href="ocbc-page.html" class="card"><img src="OCBC.png" alt="OCBC"></a>
+            <a href="login.html" class="card"><img src="DBS.png" alt="DBS"></a>
+            <a href="citi-page.html" class="card"><img src="Citi.png" alt="Income"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

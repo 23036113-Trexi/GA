@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singpass OTP Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            color: #e03c31;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logout-btn {
+            background-color: #e03c31;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .tabs {
+            margin-top: 20px;
+        }
+
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            border-bottom: 2px solid #e03c31;
+            color: #e03c31;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .phone-icon {
+            display: inline-block;
+            width: 50px;
+            height: 80px;
+            background-color: #888;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #e03c31;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #8e44ad;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">singpass</div>
+        <button class="logout-btn">Log out</button>
+        </div>
+    </header>
+
+    <div class="tabs">
+        <span class="tab active">SMS OTP</span>
+        <span class="tab">Face verification</span>
+    </div>
+
+    <div class="content">
+        <p>Enter the 6-digit One-time Password (OTP) sent to your mobile number ****9137. <a href="#">Not your mobile
+                number?</a></p>
+
+        <div>
+            <img src="OTP.png">
+            <span class="sms-bubble">SMS</span>
+            <label for="otp">One-time Password:</label>
+            <input type="text" id="otp" placeholder="OTP">
+            <a href="connect.html">
+                <button class="submit-btn">Submit</button>
+            </a>
+        </div>
+
+        <p>If you do not receive the SMS OTP in 30 seconds, <a href="#" id="resendLink">click resend SMS OTP</a>.</p>
+    </div>
+
+</body>
+
+</html>
