@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Bank Interest Rates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(223, 241, 253);
+        }
+        .rate-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .rate-card:hover {
+            transform: scale(1.05);
+        }
+        .tab-container {
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .tab {
+            padding: 10px 15px;
+            margin-right: 15px;
+            cursor: pointer;
+            color: #888;
+            text-decoration: none;
+        }
+        .tab.active {
+            color: #000;
+            border-bottom: 2px solid #ff0000;
+        }
+        .card-high {
+            color: green;
+        }
+        .open-account-btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab-container">
+        <a href="#" class="tab">Dashboard</a>
+        <a href="premiumconnect.html" class="tab">Connections</a>
+        <a href="#" class="tab">Wallet</a>
+        <a href="interest.html" class="active tab">Interest</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Singapore Bank Interest Rates</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">UOB</h5>
+                        <p class="card-text">Savings Account: 0.05%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.50%</p>
+                        <a href="https://forms.uob.com.sg/uobforms/one-account/index.page">
+                        <button class="btn btn-warning open-account-btn">Open Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">DBS</h5>
+                        <p class="card-text">Savings Account: 0.05%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.45%</p>
+                        <p class="text-success">Already Connected</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Citibank</h5>
+                        <p class="card-high">Savings Account: 0.30%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.55%</p>
+                        <a href="https://www.citibank.com.sg/personal-banking/deposits/savings-account/basic-bank-account/">
+                        <button class="btn btn-warning open-account-btn">Open Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Maybank</h5>
+                        <p class="card-text">Savings Account: 0.15%</p>
+                        <p class="card-high">Fixed Deposit (12 months): 1.60%</p>
+                        <a href="https://www.maybank2u.com.sg/en/promotions/deposits/online-account-opening.page">
+                        <button class="btn btn-warning open-account-btn">Open Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Chartered</h5>
+                        <p class="card-text">Savings Account: 0.10%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.40%</p>
+                        <a href="https://www.sc.com/sg/save/">
+                        <button class="btn btn-warning open-account-btn">Open Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">OCBC</h5>
+                        <p class="card-text">Savings Account: 0.05%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.45%</p>
+                        <p class="text-success">Already Connected</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">HSBC</h5>
+                        <p class="card-text">Savings Account: 0.05%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.50%</p>
+                        <a href="https://www.hsbc.com.sg/accounts/products/everyday-global/?SearchEngine=MICROSOFT&Keyword=hsbc+open+account&MatchType=e&AdID=43700075837761623&ef_id=:G:s&s_kwcid=AL!9181!3!!e!!o!!hsbc%20open%20account&gclid=d23922b5076e11395e3f441a8731a9e6&gclsrc=3p.ds&msclkid=d23922b5076e11395e3f441a8731a9e6&utm_source=bing&utm_medium=cpc&utm_campaign=HSBC_SGP_RBWM-RB_DASAAK-EGA2020_ACQ_ASAV_SA_CONVE_KT_CPC_GOO_SEAH_SEA_TEXTAD_NU_CXD_EN_EX_BG_NU_NU&utm_term=hsbc%20open%20account&utm_content=Bank%20Account">
+                        <button class="btn btn-warning open-account-btn">Open Account</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <p class="text-muted">Note: Interest rates are for illustration purposes only and may not reflect current market rates.</p>
+        </div>
+    </div>
+
+    
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

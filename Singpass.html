@@ -18,15 +18,10 @@
             justify-content: space-between;
             align-items: center;
         }
-        .logo {
-            color: #e03c31;
-            font-weight: bold;
-            font-size: 24px;
-        }
         .maintenance-banner {
-            background-color: #fff9e6;
+            background-color: #eaeae7;
             padding: 10px 20px;
-            border: 1px solid #ffeeba;
+            border: 1px solid #faf9f5;
         }
         .content {
             display: flex;
@@ -83,12 +78,12 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">singpass</div>
+            <img src="singpass.png" alt="Singpass Logo" class="logo-image" width="200px">
     </div>
 
     <div class="maintenance-banner">
-        <h3>Singpass hotline under maintenance ^</h3>
-        <p>The Singpass hotline +65 6335 3533 will be undergoing system maintenance from 10pm to 2am. If you suspect that you have fallen prey to a scam, please call our alternative number +65 6031 3199 and press "9" for 24-hour support.</p>
+        <h2>Beware of account takeovers</h2>
+        <p>Scammers may manipulate victims to change their Singpass contact details, e.g. email and mobile number. This allows the scammers to receive the victim's One-Time Passwords or take over the Singpass account to commit crimes. If you suspect your account has been compromised, call the Singpass hotline.</p>
     </div>
 
     <div class="content">
@@ -97,14 +92,14 @@
             <p>Your trusted digital identity</p>
         </div>
         <div class="login-form">
-            <h2>Singpass app</h2>
             <h2>Password login</h2>
+            <h3>Log in</h3>
             <form>
                 <input type="text" placeholder="Singpass ID" required>
                 <input type="password" placeholder="Password" required>
             </form>
                 <a href="OTP.html">
-                    <button class="submit-btn">Submit</button>
+                    <button class="submit-btn">Log in</button>
                 </a>
             <br>
             <a href="#">Retrieve Singpass ID</a>

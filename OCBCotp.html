@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Step Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .otp-input {
+            margin: 20px 0;
+        }
+        .otp-input input {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #generateOTP {
+            background-color: #808080;
+            color: white;
+            border: none;
+        }
+        #authenticate {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="OCBC.png" alt="OCBC Logo" class="logo">
+    <h2>Two Step Verification</h2>
+    <p>This tells us if it's really you.</p>
+    
+    <!-- use of AI here to do the boxes -->
+    <div class="otp-input">
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+    </div>
+    
+    <div>
+        <span>Login with IB secure device</span>
+        <span>Login with SMS</span>
+    </div>
+    
+    <button id="generateOTP">GENERATE OTP</button>
+    
+    <div>
+        <button>Cancel</button>
+        <a href = "afterconnect.html"><button id="authenticate">Authenticate</button></a>
+    </div>
+
+    <!-- use of AI here to generate OTP -->
+    <script>
+        document.getElementById('generateOTP').addEventListener('click', function() {
+            const otp = Math.floor(100000 + Math.random() * 900000);
+            alert('Your OTP is: ' + otp);
+            
+            const inputs = document.querySelectorAll('.otp-input input');
+            const otpString = otp.toString();
+            for (let i = 0; i < 6; i++) {
+                inputs[i].value = otpString[i];
+            }
+        });
+    </script>
+</body>
+</html>

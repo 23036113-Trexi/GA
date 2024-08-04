@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .main-content {
+            margin-top: 30px;
+        }
+
+        body {
+            background-color: rgb(223, 241, 253);
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            background-color: white;
+        }
+
+        .tab {
+            padding: 10px 15px;
+            margin-right: 15px;
+            cursor: pointer;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .tab.active {
+            color: #000;
+            border-bottom: 2px solid #ff0000;
+        }
+
+        .sidebar {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .account-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .account-name {
+            font-weight: bold;
+        }
+
+        .account-number {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .account-value {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab-container">
+        <a href="twodashboard.html" class="active tab">Dashboard</a>
+        <a href="twoconnect.html" class="tab">Connections</a>
+        <a href="transfer.html" class="tab">Wallet</a>
+        <a href="twointerest.html" class="tab">Interest</a>
+    </div>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="mb-4">What You have</h3>
+                <div class="sidebar">
+                    <h4>SGD</h4>
+                    <h4>11,934.56</h4>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <h3 class="mb-4">Accounts</h3>
+                <div class="account-card">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="account-name">OCBC FRANK Account</div>
+                            <div class="account-number">XXXXXXXX5-001 • Current account</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="account-value">SGD 3,033.81</div>
+                            <div class="text-muted text-end">Data as of 9 Aug 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="account-name">DBS eMySavings Account</div>
+                            <div class="account-number">XXXXX392-5 • Savings account</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="account-value">SGD 8,900.75</div>
+                            <div class="text-muted text-end">Data as of 9 Aug 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <h3>Transactions</h3>
+               
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

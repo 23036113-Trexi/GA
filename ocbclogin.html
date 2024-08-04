@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCBC Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fffdfd;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .forgot-link {
+            display: block;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #e32820;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .register-link a {
+            color: #e32820;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="OCBC.png" alt="OCBC Logo" width="150">
+    </div>
+    <div class="login-container">
+        <h1>Login to give OCBC your consent</h1>
+        <input type="text" placeholder="Access code">
+        <input type="password" placeholder="PIN">
+        <a href="#" class="forgot-link">Forgot Access code/PIN?</a>
+        <a href="termsNconditions.html">
+        <button class="login-btn">Login</button>
+        </a>
+    </div>
+    <p class="register-link">Don't have an account? <a href="#">Register now</a></p>
+</body>
+</html>

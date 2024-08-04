@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Bank Interest Rates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(223, 241, 253);
+        }
+        .rate-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .rate-card:hover {
+            transform: scale(1.05);
+        }
+
+
+        .tab-container {
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .tab {
+            padding: 10px 15px;
+            margin-right: 15px;
+            cursor: pointer;
+            color: #888;
+            text-decoration: none;
+        }
+        .tab.active {
+            color: #000;
+            border-bottom: 2px solid #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="tab-container">
+        <a href="oneconnection.html" class="tab">Dashboard</a>
+        <a href="afterconnect.html" class="tab">Connections</a>
+        <a href="trytransfer.html" class="tab">Wallet</a>
+        <a href="interest.html" class="active tab">Interest</a>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Singapore Bank Interest Rates</h2>
+        
+            <div class="col">
+                <div class="card rate-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">OCBC</h5>
+                        <p class="card-text">Savings Account: 0.05%</p>
+                        <p class="card-text">Fixed Deposit (12 months): 1.45%</p>
+                    </div>
+                </div>
+            </div>
+           
+        
+        <div class="mt-4 text-center">
+            <p class="text-muted">Note: Interest rates are for illustration purposes only and may not reflect current market rates.</p>
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
